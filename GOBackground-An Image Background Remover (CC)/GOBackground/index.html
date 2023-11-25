@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="assets/go-background-high-resolution-logo-transparent (1).png" />
+
+    <title>GOBackground - Image Background Remover</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+      
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#">
+                <img src="assets/go-background-high-resolution-logo-transparent (1).png" alt="GOBackground Logo"> GOBackground
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#try-now">Try Now</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                   <li class="nav-item">
+                        <a class="nav-link" href="#our-works">Our Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 style="font-weight: bold; font-size: 40px; color: #008069;">Welcome to <br>GOBackground</h1>
+                    <p style="font-size: 20px; color: #333;">Your ultimate tool for removing image backgrounds. It's <em><strong>fast, easy, and free!</strong></em></p>
+                    <!-- <a href="try-now.html" class="btn-capsule">Try Now</a> -->
+                    <!-- <button onclick="window.location.href = 'implementation.html'" class="btn-capsule">Try Now</button> -->
+                    <button onclick="window.location.href = '#try-now'" class="btn-capsule">Try Now</button>
+                    <!-- <a href="implementation.html" class="btn-capsule">Try Now</a> -->
+
+
+                </div>
+                <div class="col-md-6">
+                   
+                        
+                    <video width="500px" height="500px" autoplay loop muted>
+                        <source src="assets/BGremover.mp4" type="video/mp4">
+                    </video>
+                    <!-- <img src="assets/HOW.mp4" alt="GOBackground GIF" style="max-width: 100%;"> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+</head>
+<body>
+<section id="try-now">
+    <div class="container">
+        <h2 style="align-items: center;font-size: 40px;color: whitesmoke;">Remove Image Background </h2>
+
+        <div class="row">
+            <div class="col-md-6" style="padding-right: 50px;">
+                <img src="assets/q2.jpg" alt="Left Image" style="max-width: 100%; height: 300px;width:500px ;">
+            </div>
+            <div class="col-md-6 card">
+                <form style="border-bottom: #333;">
+                    <div class="form-group">
+                        <label for="fileInput">Select a File:</label> 
+                        <input id="fileInput" class="form-control" type="file">
+                    </div>
+                    <input class="btn btn-primary m-1" type="button" onclick="submitHandler()" value="Upload">
+                </form>
+                <button class="btn btn-warning" onclick="downloadFile()">Download</button>
+                <p id="successMessage" style="display: none; color: green;">Background removed successfully! </p>
+            </div>
+        </div>
+    </div>
+
+    </section>
+
+    
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 style="font-size: 36px; font-weight: bold; color: #008069;padding-bottom: 20px;">About Us</h2>
+                    <!-- <p>We are dedicated to providing you with the best image background removal service. With GOBackground, you can easily remove backgrounds from your images with just a few clicks.</p> -->
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="image-container">
+                        <img src="assets/q11.jpeg" alt="Image 1" style="max-width: 100%;height: 270px;padding-right: 30px;border-radius: 20px;">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="image-container">
+                        <!-- <img src="assets/q12.jpeg" alt="Image 2" style="max-width: 100%;"> -->
+                        <p style="color: black;">We are committed to delivering high-quality results and making the background removal process as simple as possible. Whether you're an individual looking to enhance your photos or a business needing polished product images, we've got you covered.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="our-works" >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 style="font-weight: bold; padding-bottom: 20px; font-size: 40px;">Our Works</h2>
+                    <div class="card-deck">
+                        <div class="card rounded">
+                            <img src="assets/q6.jpeg" alt="Work 1" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">People</h5>
+                                <p class="card-text">We specialize in removing backgrounds from portraits and group photos, ensuring your subjects stand out.</p>
+                            </div>
+                        </div>
+                        <div class="card rounded">
+                            <img src="assets/q13.jpeg" alt="Work 2" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Cars</h5>
+                                <p class="card-text">Enhance your automotive images by removing distractions and making your vehicles the main focus.</p>
+                            </div>
+                        </div>
+                        <div class="card rounded">
+                            <img src="assets/q4.jpeg" alt="Work 3" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Products</h5>
+                                <p class="card-text">Showcase your products with clean, professional images by eliminating background clutter.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <style> .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    </style>
+
+    <section id="contact" >
+        <div class="container">
+            <div class="row" >
+                <div class="col-md-6 " style=" color: #f8f9fa;;" >
+                    <h2 style="font-weight: bold;color: #f8f9fa; ">Contact Us</h2>
+                    <address style="padding-top: 20px;">
+
+                    <p  style="color: #f8f9fa;">If you have any questions or feedback, feel free to reach out to us:</p>
+                        Email: <a href="mailto:contact@GOBackground.com" style="color: white;">contact@GOBackground.com</a><br>
+                        Phone: +1 (123) 456-7890<br>
+                    </address>
+                </div>
+                <div class="col-md-6">
+                <img src="assets/q15.jpg" alt="Contact Image" style="max-width: 75%;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class=" py-4  text-center" style="background-color:#ccfffb;">
+        <div class="container">
+            <p>&copy; 2023 GOBackground. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
+
